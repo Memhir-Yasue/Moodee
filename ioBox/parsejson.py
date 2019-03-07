@@ -6,6 +6,6 @@ raw_json = open('json.txt')
 
 json_ = json.load(raw_json)
 
-users = json_['users']
+currency = json_['list'][0][0]['currency']
 
-print(users)
+print(currency)

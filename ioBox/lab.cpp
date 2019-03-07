@@ -15,8 +15,68 @@ void write(json obj) {
   w_file << obj;
 }
 
+void print(json obj) {
+  std::cout << obj <<std::endl;
+}
+
 int main()
 {
+  // json j2;
+  // j2["list"] = {}
+  // print(j2);
+  // j2.push_back("YasuE");
+  // // write(j2);
+  // print(j2);
+  // j2.push_back("saray");
+  // // write(j2);
+  // print(j2);
+
+  /*
+  json j2 = {
+  {"pi", 3.141},
+  {"happy", true},
+  {"name", "Niels"},
+  {"nothing", nullptr},
+  {"answer", {
+    {"everything", 42}
+  }},
+  {"list", {1, 0, 2}},
+  {"object", {
+    {"currency", "USD"},
+    {"value", 42.99}
+  }}
+};
+  */
+
+
+  json j2 = {
+  {"pi", 3.141},
+  {"happy", true},
+  {"name", "Niels"},
+  {"nothing", nullptr},
+  {"answer", {
+    {"everything", 42}
+  }},
+
+  {
+    "list",
+      {
+        {
+          {
+            {
+              "currency", "USD"
+            },
+            {
+              "value", 42.99
+            }
+          }
+        }
+      }
+    }
+  };
+print(j2);
+write(j2);
+
   json j;
   // j["user"] = {{"YasuE","year"}, {"Sare","year"} };
   // j["user"]["year"] = {2017,2018,2019};
@@ -44,8 +104,8 @@ int main()
   // j["user"].push_back(1);
   // j["user"].push_back(true);
 
-  std::cout << j <<"\n";
-  write(j);
+  // std::cout << j <<"\n";
+  // write(j);
 
   return 0;
 }
