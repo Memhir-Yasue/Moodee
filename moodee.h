@@ -1,3 +1,7 @@
+#ifndef MOODEE_H
+#define MOODEE_H
+
+
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -70,11 +74,4 @@ public:
 
 };
 
-// int main()
-// {
-//   Moodee me;
-//   me.rd_bible(1);
-//   me.print();
-//   // crun(me);
-//   return 0;
-// }
+#endif
