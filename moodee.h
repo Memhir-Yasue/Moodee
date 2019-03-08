@@ -16,10 +16,7 @@ double m_hours_slept;
 bool m_Sbat;
 bool m_breakfast;
 bool m_rd_bible;
-
-
 public:
-
   std::string setTime()
   {
     time_t curr_time_raw;
@@ -65,11 +62,21 @@ public:
 
   void print()
   {
-    std::cout <<"Time: " << m_day;
+    std::cout <<"Time: " << m_day << std::endl;
     std::cout <<"Mood: " << m_mood <<"/5 \n";
     std::cout <<"Sbat: " << std::boolalpha << m_Sbat<<" \n";
     std::cout <<"breakfast: " << std::boolalpha << m_breakfast<<" \n";
     std::cout <<"Read Bible: " << std::boolalpha << m_rd_bible<<" \n";
+  }
+
+  void out(std::string file_name)
+  {
+    std::ofstream w_file (file_name);
+    w_file <<"Time: " << m_day << std::endl;
+    w_file <<"Mood: " << m_mood << std::endl;
+    w_file <<"Sbat: " << std::boolalpha << m_Sbat << std::endl;
+    w_file <<"breakfast: " << std::boolalpha << m_breakfast << std::endl;
+    w_file <<"Read Bible: " << std::boolalpha << m_rd_bible << std::endl;
   }
 
 };

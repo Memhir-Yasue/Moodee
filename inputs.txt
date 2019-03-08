@@ -1,0 +1,5 @@
+Time: 
+Mood: 2
+Sbat: true
+breakfast: true
+Read Bible: false
