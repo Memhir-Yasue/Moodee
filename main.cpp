@@ -3,6 +3,7 @@
 
 int main() {
   Moodee me;
+  me.setTime();
   me.breakfast(1);
   me.S_bat(1);
   me.mood(2);
