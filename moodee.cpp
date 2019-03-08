@@ -5,20 +5,16 @@
 #include <ctime>
 #include <sstream>
 
-#include "moodee.h"
-
 class Moodee
 {
-
 std::string m_day;
+std::string m_name;
 int m_mood;
 double m_hours_slept;
 bool m_Sbat;
 bool m_breakfast;
 bool m_rd_bible;
-
 public:
-
   std::string setTime()
   {
     time_t curr_time_raw;
@@ -27,6 +23,11 @@ public:
     ss << ctime(&curr_time_raw);
     m_day = ss.str();
     return m_day;
+  }
+
+  std::string name(std::string name_)
+  {
+    m_name = name_;
   }
 
   int mood(int mood)
@@ -67,6 +68,7 @@ public:
   void print()
   {
     std::cout <<"Time: " << m_day;
+    std::cout <<"Name: " << m_name;
     std::cout <<"Mood: " << m_mood <<"/5 \n";
     std::cout <<"Sbat: " << std::boolalpha << m_Sbat<<" \n";
     std::cout <<"breakfast: " << std::boolalpha << m_breakfast<<" \n";
@@ -77,6 +79,7 @@ public:
   {
     std::ofstream w_file (file_name);
     w_file <<"Time: " << m_day;
+    w_file <<"Name: " << m_name;
     w_file <<"Mood: " << m_mood << std::endl;
     w_file <<"Sbat: " << std::boolalpha << m_Sbat << std::endl;
     w_file <<"breakfast: " << std::boolalpha << m_breakfast << std::endl;
@@ -84,12 +87,3 @@ public:
   }
 
 };
-
-// int main()
-// {
-//   Moodee me;
-//   me.rd_bible(1);
-//   me.print();
-//   // crun(me);
-//   return 0;
-// }
