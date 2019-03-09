@@ -9,6 +9,7 @@
 #include <ctime>
 #include <sstream>
 #include <regex>
+#include "nlohmann/json.hpp"
 
 class Moodee
 {
@@ -19,6 +20,26 @@ double m_hours_slept;
 bool m_Sbat;
 bool m_breakfast;
 bool m_rd_bible;
+
+
+void wjson(nlohmann::json obj) {
+  std::ofstream w_file ("json.txt");
+  w_file << obj;
+}
+
+void ojson()
+{
+  nlohmann::json df;
+  df["data"]["users"][m_name]["2019"]["May"]["8"] = {
+                                                  {"Time stamp: ",m_day},
+                                                  {"Mood",std::to_string(m_mood)},
+                                                  {"Sbat",std::to_string(m_Sbat)},
+                                                  {"Breakfast",std::to_string(m_breakfast)},
+                                                  {"Bible",std::to_string(m_rd_bible)},
+                                                };
+  wjson(df);
+}
+
 public:
   std::string setTime()
   {
@@ -79,19 +100,20 @@ public:
     std::cout <<"Name: " << m_name <<"\n";
     std::cout <<"Mood: " << m_mood <<"/5 \n";
     std::cout <<"Sbat: " << std::boolalpha << m_Sbat<<" \n";
-    std::cout <<"breakfast: " << std::boolalpha << m_breakfast<<" \n";
-    std::cout <<"Read Bible: " << std::boolalpha << m_rd_bible<<" \n";
+    std::cout <<"Breakfast: " << std::boolalpha << m_breakfast<<" \n";
+    std::cout <<"Bible: " << std::boolalpha << m_rd_bible<<" \n";
   }
 
   void out(std::string file_name)
   {
+    ojson();
     std::ofstream w_file (file_name);
     w_file <<"Time: " << m_day;
     w_file <<"Name: " << m_name << std::endl;
     w_file <<"Mood: " << m_mood << std::endl;
     w_file <<"Sbat: " << std::boolalpha << m_Sbat << std::endl;
-    w_file <<"breakfast: " << std::boolalpha << m_breakfast << std::endl;
-    w_file <<"Read Bible: " << std::boolalpha << m_rd_bible << std::endl;
+    w_file <<"Breakfast: " << std::boolalpha << m_breakfast << std::endl;
+    w_file <<"Bible: " << std::boolalpha << m_rd_bible << std::endl;
   }
 
 };
