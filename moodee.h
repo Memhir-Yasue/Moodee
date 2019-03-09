@@ -9,7 +9,6 @@
 #include <ctime>
 #include <sstream>
 #include <regex>
-#include "nlohmann/json.hpp"
 
 class Moodee
 {
@@ -21,25 +20,6 @@ bool m_Sbat;
 bool m_breakfast;
 bool m_rd_bible;
 
-
-void wjson(nlohmann::json obj) {
-  std::ofstream w_file ("json.txt");
-  w_file << obj;
-}
-
-void ojson()
-{
-  nlohmann::json df;
-  df["data"]["users"][m_name]["2019"]["May"]["8"] = {
-                                                  {"Time stamp: ",m_day},
-                                                  {"Mood",std::to_string(m_mood)},
-                                                  {"Sbat",std::to_string(m_Sbat)},
-                                                  {"Breakfast",std::to_string(m_breakfast)},
-                                                  {"Bible",std::to_string(m_rd_bible)},
-                                                };
-  wjson(df);
-}
-
 public:
   std::string setTime()
   {
@@ -48,6 +28,9 @@ public:
     std::stringstream ss;
     ss << ctime(&curr_time_raw);
     m_day = ss.str();
+    /*
+      The ctime function produces an extra white spaces between the month and day
+    */
     std::regex search("[' ']{2,}");
     m_day =  std::regex_replace(m_day, search, " ");
     return m_day;
@@ -106,8 +89,7 @@ public:
 
   void out(std::string file_name)
   {
-    ojson();
-    std::ofstream w_file (file_name);
+    std::ofstream w_file (file_name,std::ios::app);
     w_file <<"Time: " << m_day;
     w_file <<"Name: " << m_name << std::endl;
     w_file <<"Mood: " << m_mood << std::endl;
