@@ -6,7 +6,12 @@
 using json = nlohmann::json;
 
 void write(json obj) {
-  std::ofstream w_file ("json.txt");
+  std::ofstream w_file ("json.txt", std::ios::app);
+  if (!w_file)
+  {
+    std::cerr << "the json file could not be opened for writting"<<std::endl;
+    exit(1);
+  }
   w_file << obj;
 }
 

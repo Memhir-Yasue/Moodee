@@ -1,6 +1,24 @@
-Time: Fri Mar 8 18:47:27 2019
-Name: josh
+Time: Fri Mar 8 22:27:56 2019
+Name: YasuE
 Mood: 2
 Sbat: true
-breakfast: true
-Read Bible: false
+Breakfast: true
+Bible: false
+Time: Fri Mar 8 22:27:58 2019
+Name: YasuE
+Mood: 2
+Sbat: true
+Breakfast: true
+Bible: false
+Time: Fri Mar 8 22:27:59 2019
+Name: YasuE
+Mood: 2
+Sbat: true
+Breakfast: true
+Bible: false
+Time: Fri Mar 8 22:28:01 2019
+Name: YasuE
+Mood: 2
+Sbat: true
+Breakfast: true
+Bible: false
