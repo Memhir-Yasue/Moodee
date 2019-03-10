@@ -17,7 +17,7 @@ bool m_breakfast;
 bool m_rd_bible;
 
 public:
-  std::string setTime()
+  std::string setTime() // create a constructor to initalize this automatically
   {
     time_t curr_time_raw;
     time (&curr_time_raw);
