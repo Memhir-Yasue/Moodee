@@ -9,7 +9,8 @@ int main() {
   me.mood(2);
   me.sleep(2);
   me.rd_bible(0);
-  me.print();
+  me.note("MERHABAB SFHJDHFJDFHJDHf bfjksbkgef nkejhergnjkengjkreh");
   me.out("inputs.txt");
+  me.print();
   return 0;
 }

@@ -19,7 +19,7 @@ moodData is the name of the table
 """
 def connect():
     startdb()
-    cur.execute('CREATE TABLE IF NOT EXISTS moodData( unixTime REAL, name TEXT, mood REAL, breakfast TEXT, SBAT TEXT, Bible TEXT )')
+    cur.execute('CREATE TABLE IF NOT EXISTS moodData( unixTime REAL, name TEXT, mood REAL, breakfast TEXT, SBAT TEXT, Bible TEXT, note TEXT )')
     closedb()
 
 # def data_entry():
@@ -29,11 +29,11 @@ def connect():
 #     cur.close()
 #     conn.close()
 
-def dynamic_data_entry(name, mood, breakfast, sBAT, Bible):
+def dynamic_data_entry(name, mood, breakfast, sBAT, Bible, note):
     startdb()
     unix = time.time()
-    cur.execute("INSERT INTO moodData (unixTime, name, mood, breakfast, sBAT, Bible) VALUES (?, ?, ?, ? ,? ,?)",
-            (unix, name, mood, breakfast, sBAT,Bible))
+    cur.execute("INSERT INTO moodData (unixTime, name, mood, breakfast, sBAT, Bible, note) VALUES (?, ?, ?, ? ,? , ?, ?)",
+            (unix, name, mood, breakfast, sBAT, Bible, note))
     closedb()
 
 

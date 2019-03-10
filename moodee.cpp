@@ -6,6 +6,8 @@
 #include <sstream>
 #include <regex>
 
+
+
 class Moodee
 {
 std::string m_day;
@@ -15,6 +17,7 @@ double m_hours_slept;
 bool m_Sbat;
 bool m_breakfast;
 bool m_rd_bible;
+std::string msg;
 
 public:
   std::string setTime() // create a constructor to initalize this automatically
@@ -73,6 +76,12 @@ public:
     return m_rd_bible;
   }
 
+  std::string note(std::string short_message)
+  {
+    msg = short_message;
+    return msg;
+  }
+
   void print()
   {
     std::cout <<"Time: " << m_day;
@@ -81,6 +90,7 @@ public:
     std::cout <<"Sbat: " << std::boolalpha << m_Sbat<<" \n";
     std::cout <<"Breakfast: " << std::boolalpha << m_breakfast<<" \n";
     std::cout <<"Bible: " << std::boolalpha << m_rd_bible<<" \n";
+    std::cout <<"Note: " << msg <<"\n\n";
   }
 
   void out(std::string file_name)
@@ -91,7 +101,7 @@ public:
     w_file <<"Mood: " << m_mood << std::endl;
     w_file <<"Sbat: " << std::boolalpha << m_Sbat << std::endl;
     w_file <<"Breakfast: " << std::boolalpha << m_breakfast << std::endl;
-    w_file <<"Bible: " << std::boolalpha << m_rd_bible << std::endl;
+    w_file <<"Note: " << msg << "\n\n" << std::endl;
   }
 
 };

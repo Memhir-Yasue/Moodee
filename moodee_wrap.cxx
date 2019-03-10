@@ -3691,6 +3691,39 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_Moodee_note(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  Moodee *arg1 = (Moodee *) 0 ;
+  std::string arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  std::string result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:Moodee_note",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_Moodee, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Moodee_note" "', argument " "1"" of type '" "Moodee *""'"); 
+  }
+  arg1 = reinterpret_cast< Moodee * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "Moodee_note" "', argument " "2"" of type '" "std::string""'"); 
+    }
+    arg2 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  result = (arg1)->note(arg2);
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_Moodee__print(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   Moodee *arg1 = (Moodee *) 0 ;
@@ -3794,6 +3827,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"Moodee_S_bat", _wrap_Moodee_S_bat, METH_VARARGS, NULL},
 	 { (char *)"Moodee_breakfast", _wrap_Moodee_breakfast, METH_VARARGS, NULL},
 	 { (char *)"Moodee_rd_bible", _wrap_Moodee_rd_bible, METH_VARARGS, NULL},
+	 { (char *)"Moodee_note", _wrap_Moodee_note, METH_VARARGS, NULL},
 	 { (char *)"Moodee__print", _wrap_Moodee__print, METH_VARARGS, NULL},
 	 { (char *)"Moodee_out", _wrap_Moodee_out, METH_VARARGS, NULL},
 	 { (char *)"new_Moodee", _wrap_new_Moodee, METH_VARARGS, NULL},

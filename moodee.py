@@ -123,6 +123,9 @@ class Moodee(_object):
     def rd_bible(self, pick):
         return _moodee.Moodee_rd_bible(self, pick)
 
+    def note(self, short_message):
+        return _moodee.Moodee_note(self, short_message)
+
     def _print(self):
         return _moodee.Moodee__print(self)
 
