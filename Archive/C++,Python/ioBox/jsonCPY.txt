@@ -1,0 +1,1 @@
+{"answer":{"everything":42},"happy":true,"list":[[{"currency":"USD","value":42.99}]],"name":"Niels","nothing":null,"pi":3.141}

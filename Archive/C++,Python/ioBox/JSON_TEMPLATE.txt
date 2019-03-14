@@ -1,0 +1,11 @@
+json j
+
+for (int i = 1; i <= 31; i++) {
+  std::string day = std::to_string(i);
+  j["data"]["users"]["YasuE"]["2018"]["January"][day] = { {"Question1","user_input"},
+                                                  {"Question2","user_input"},
+                                                  {"Question3","user_input"},
+                                                  {"Question4","user_input"},
+                                                  {"Question5","user_input"},
+                                                };
+}

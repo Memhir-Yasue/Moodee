@@ -1,0 +1,140 @@
+Time: Fri Mar 8 22:27:56 2019
+Name: YasuE
+Mood: 2
+Sbat: true
+Breakfast: true
+Bible: false
+Time: Fri Mar 8 22:27:58 2019
+Name: YasuE
+Mood: 2
+Sbat: true
+Breakfast: true
+Bible: false
+Time: Fri Mar 8 22:27:59 2019
+Name: YasuE
+Mood: 2
+Sbat: true
+Breakfast: true
+Bible: false
+Time: Fri Mar 8 22:28:01 2019
+Name: YasuE
+Mood: 2
+Sbat: true
+Breakfast: true
+Bible: false
+Time: Sat Mar 9 07:56:48 2019
+Name: YasuE
+Mood: 3
+Sbat: false
+Breakfast: false
+Bible: false
+Time: Sat Mar 9 17:08:28 2019
+Name: YasuE
+Mood: 3
+Sbat: false
+Breakfast: true
+Bible: true
+Time: Sat Mar 9 17:27:54 2019
+Name: YasuE
+Mood: 3
+Sbat: false
+Breakfast: true
+Bible: true
+Time: Sat Mar 9 17:59:04 2019
+Name: YasuE
+Mood: 3
+Sbat: false
+Breakfast: true
+Bible: true
+Time: Sat Mar 9 17:59:39 2019
+Name: YasuE
+Mood: 3
+Sbat: false
+Breakfast: true
+Bible: true
+Time: Sat Mar 9 18:57:17 2019
+Name: YasuE
+Mood: 3
+Sbat: false
+Breakfast: true
+Bible: true
+Time: Sat Mar 9 18:58:23 2019
+Name: YasuE
+Mood: 3
+Sbat: false
+Breakfast: true
+Bible: true
+Time: Sat Mar 9 18:58:55 2019
+Name: YasuE
+Mood: 3
+Sbat: false
+Breakfast: true
+Bible: true
+Time: Sat Mar 9 18:59:24 2019
+Name: YasuE
+Mood: 3
+Sbat: false
+Breakfast: true
+Bible: true
+Time: Sat Mar 9 18:59:27 2019
+Name: YasuE
+Mood: 3
+Sbat: false
+Breakfast: true
+Bible: true
+Time: Sat Mar 9 19:35:00 2019
+Name: YasuE
+Mood: 3
+Sbat: false
+Breakfast: true
+Bible: true
+Time: Sat Mar 9 19:49:24 2019
+Name: YasuE
+Mood: 2
+Sbat: true
+Breakfast: true
+Note: hiiii
+
+
+Time: Sat Mar 9 19:49:45 2019
+Name: YasuE
+Mood: 2
+Sbat: true
+Breakfast: true
+Note: MERHABAB SFHJDHFJDFHJDHf bfjksbkgef nkejhergnjkengjkreh
+
+
+Time: Sat Mar 9 19:54:48 2019
+Name: YasuE
+Mood: 3
+Sbat: false
+Breakfast: true
+Note: Today has been a great day! I created the Python Wrapper,
+          email sent via Python (more work neede) and finally,
+          data-base implemented!
+       
+
+
+Time: Sat Mar 9 19:57:04 2019
+Name: YasuE
+Mood: 4
+Sbat: false
+Breakfast: true
+Note: Today has been a great day! I created the Python Wrapper,
+          email sent via Python (more work neede) and finally,
+          data-base implemented!
+       
+
+
+Time: Sat Mar 9 22:59:09 2019
+Name: YasuE
+Mood: 4
+Sbat: false
+Breakfast: true
+Note: 
+            First LeetCode challenge! Almost got wrecked with 8 minutes to spare for one question out of four
+            because of wording issue. Next time, PAY ATTENTION TO THE TITLE! It contains info the body
+            might not!!!
+       
+
+

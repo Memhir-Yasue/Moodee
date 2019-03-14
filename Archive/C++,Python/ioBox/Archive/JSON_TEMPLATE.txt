@@ -1,0 +1,61 @@
+
+NO DECLARATION
+{"data",{{{"users",{{{"yasuE",{{{"Year",{{{"Month",{{{"day",
+{{{"Question1","user_input1"},{"Question2","user_input2"},{"Question3","user_input3"},{"Question4","user_input4"},{"Question5","user_input5"},{"Question6","user_input6"},}}}}}}}}}}}}}}}}}}
+
+COMPRESSED W/ DECLARATION
+json proto = {{"data",{{{"users",{{{"yasuE",{{{"Year",{{{"Month",{{{"day",
+{{{"Question1","user_input1"},{"Question2","user_input2"},{"Question3","user_input3"},{"Question4","user_input4"},{"Question5","user_input5"},{"Question6","user_input6"},}}}}}}}}}}}}}}}}}}};
+
+
+EXPANDED W? DECLARATION
+json proto = {
+{
+  "data",
+    {
+      {
+        {
+          "users",
+          {
+            {
+              {
+                "yasuE",
+                {
+                  {
+                    {
+                      "Year",
+                      {
+                        {
+                          {
+                            "Month",
+                            {
+                              {
+                                {
+                                  "day",
+                                  {
+                                    {
+                                      { "Question1","user_input1"},
+                                      { "Question2","user_input2"},
+                                      { "Question3","user_input3"},
+                                      { "Question4","user_input4"},
+                                      { "Question5","user_input5"},
+                                      { "Question6","user_input6"},
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+};
